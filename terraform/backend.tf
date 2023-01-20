@@ -16,10 +16,10 @@
 
 terraform {
   backend "remote" {
-    organization = "RCR-mshallom"
+    organization = "hacklight"
 
     workspaces {
-      name = "terraform-pbl-19"
+      name = "pbl-proj-19"
     }
   }
 }
