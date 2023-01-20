@@ -19,7 +19,7 @@ terraform {
     organization = "RCR-mshallom"
 
     workspaces {
-      name = "RCR-PACKER-TERRAFORM-SETUP"
+      name = "terraform-pbl-19"
     }
   }
 }

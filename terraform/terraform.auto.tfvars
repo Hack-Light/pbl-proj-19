@@ -1,14 +1,14 @@
 region = "us-east-1"
 
-ami-web = "ami-04de84d7edcd7e794"
+ami-web = "ami-05dac325ef8b95547"
 
-ami-bastion = "ami-073dcfbbdf456422b"
+ami-bastion = "ami-03b372c940b1f2339"
 
-ami-nginx = "ami-01fee08ef8e0e3e45"
+ami-nginx = "ami-0f163e680348fc994"
 
-ami-sonar = "ami-0cc2b867d34e24f39"
+ami-sonar = "ami-034f68388bc9258d0"
 
-ami = "ami-0149b2da6ceec4bb0"
+# ami = "ami-0149b2da6ceec4bb0"
 
 vpc_cidr = "172.16.0.0/16"
 
@@ -20,17 +20,17 @@ preferred_number_of_public_subnets = 2
 
 preferred_number_of_private_subnets = 4
 
-account_no = 736239398496
+account_no = "341950522290"
 
-keypair = "testkey"
+keypair = "free_light"
 
-db-username = "mshallom"
+db-username = "light"
 
-db-password = "1234567890"
+db-password = "lightpbl"
 
 tags = {
   Enviroment      = "production"
-  Owner-Email     = "micahshallom@gmail.com"
+  Owner-Email     = "onohlight@gmail.com"
   Managed-By      = "Terraform"
-  Billing-Account = "09071111150"
+  Billing-Account = "341950522290"
 }
