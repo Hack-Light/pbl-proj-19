@@ -9,7 +9,7 @@ resource "aws_kms_key" "RCR-kms" {
     {
       "Sid": "Enable IAM User Permissions",
       "Effect": "Allow",
-      "Principal": { "AWS": "arn:aws:iam::${var.account_no}:user/terraform" },
+      "Principal": { "AWS": "arn:aws:iam::${var.account_no}:user/light" },
       "Action": "kms:*",
       "Resource": "*"
     }
