@@ -25,13 +25,13 @@ resource "aws_route53_record" "onohlight" {
   records         = [each.value.record]
   ttl             = 60
   type            = each.value.type
-  zone_id         = data.aws_route53_zone.shallom.zone_id
+  zone_id         = data.aws_route53_zone.onohlight.zone_id
 }
 
 # validate the certificate through DNS method
 resource "aws_acm_certificate_validation" "onohlight" {
   certificate_arn         = aws_acm_certificate.onohlight.arn
-  validation_record_fqdns = [for record in aws_route53_record.shallom : record.fqdn]
+  validation_record_fqdns = [for record in aws_route53_record.onohlight : record.fqdn]
 }
 
 # create records for tooling
@@ -49,7 +49,7 @@ resource "aws_route53_record" "tooling" {
 
 # create records for wordpress
 resource "aws_route53_record" "wordpress" {
-  zone_id = data.aws_route53_zone.shallom.zone_id
+  zone_id = data.aws_route53_zone.onohlight.zone_id
   name    = "wordpress.onohlight.codes"
   type    = "A"
 
